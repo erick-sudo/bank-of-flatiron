@@ -1,9 +1,14 @@
 .App {
-    border: solid 1px;
+    box-shadow: 0.04em 0.04em 0.4em black;
     width: 95%;
     margin: 1em auto;
+    padding: 0.5em;
+    border-radius: 5px;
 }
 
+*{
+    box-sizing: border-box;
+}
 .heading {
     text-align: center;
     margin-top: 1em;
@@ -15,4 +20,98 @@
 
 .big-button {
     padding: 1em;
+    display: block;
+    font-weight: 100;
+    width: 90%;
+    margin: 0.1em auto;
+    background-color: rgb(226, 114, 8);
+    border: none;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 5px;
+    text-shadow: 0.04em 0.04em 0.04em white;
+    color: rgba(0, 0, 0, 0.753);
+}
+.header {
+    background: url("./gallery/house.png") no-repeat top right;
+    background-size: 200px;
+}
+
+.search-bar {
+    width: 90%;
+    border: solid 1px;
+    margin: 1em auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.search-input {
+    display: block;
+    flex-grow: 2;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.search-bar img {
+    width: 25px;
+}
+
+.transaction-form {
+    width: 90%;
+    margin: 1em auto;
+    border: solid 1px;
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.), rgba(255, 255, 255, 0)) no-repeat;
+}
+
+.inputs {
+    margin: 1em auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputs > input {
+    border: solid 1px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.inputs > * {
+    width: 18%;
+
+}
+
+.transaction-form > form{
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > button {
+    border: none;
+    padding: 0.7em 2em;
+    border-radius: 5px;
+    background-color: rgb(226, 114, 8);
+    font-weight: bolder;
+}
+.table {
+    width: 90%;
+    margin: 2em auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: solid 1px;
+    padding: 0.5em 0.5em 0.5em 1em;
 }
