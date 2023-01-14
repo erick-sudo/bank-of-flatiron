@@ -104,6 +104,13 @@
       "category": "Entertainment",
       "amount": "5",
       "id": 15
+    },
+    {
+      "date": "2023-01-26",
+      "description": "Movie",
+      "category": "Entertainment",
+      "amount": "90",
+      "id": 16
     }
   ]
 }

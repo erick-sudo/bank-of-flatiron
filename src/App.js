@@ -22,6 +22,11 @@ function App() {
       })
   }
 
+  function removeTransaction(id) {
+    const newTransactions = transactions.filter(transaction => transaction.id!== id)
+    setTransaction(newTransactions)
+  }
+
   function addTransaction(transaction) {
     fetch("http://localhost:4000/transactions", {
       method: "POST",
@@ -33,7 +38,6 @@ function App() {
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data)
       setTransaction([data, ...transactions])
     })
   }
@@ -41,6 +45,13 @@ function App() {
   useEffect(() => {
     fetchTransactions("http://localhost:4000/transactions")
   }, [])
+
+  const filteredTransactions = transactions.filter(transaction => {
+    if(searchString === "") {
+      return true
+    }
+    return transaction.description.toLowerCase().includes(searchString.toLowerCase())
+  })
 
   return (
     <div className="App">
@@ -52,7 +63,7 @@ function App() {
 
       <Search handleInput={handleInput} searchString={searchString}  />
       <TransactionForm addTransaction={addTransaction} />
-      <Transactions transactions={transactions} setTransaction={setTransaction} />
+      <Transactions transactions={filteredTransactions} removeTransaction={removeTransaction} />
     </div>
   );
 }

@@ -73,6 +73,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+
 }
 
 .inputs > input {
@@ -109,9 +110,25 @@ form > button {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
 }
 th, td {
     border: solid 1px;
     padding: 0.5em 0.5em 0.5em 1em;
+}
+
+tr:hover{
+    background-color: burlywood;
+}
+
+.delete-button {
+    text-align: center;
+    border: solid 1px;
+}
+
+.deletebutton {
+   padding: 0;
+   display: flex;
+   align-items: stretch;
+   justify-content: center;
 }
