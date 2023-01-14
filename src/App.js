@@ -23,7 +23,19 @@ function App() {
   }
 
   function addTransaction(transaction) {
-    setTransaction([...transactions, transaction])
+    fetch("http://localhost:4000/transactions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(transaction)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      setTransaction([data, ...transactions])
+    })
   }
 
   useEffect(() => {

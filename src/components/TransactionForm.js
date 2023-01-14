@@ -18,10 +18,10 @@ function TransactionForm({addTransaction}) {
             <form onSubmit={handleSubmit}>
                 <div className="inputs">
                     <label>Date</label>
-                    <input name="date" type="date" />
-                    <input name="description" type="text" placeholder="Description" />
-                    <input name="category" type="text" placeholder="Category" />
-                    <input name="amount" type="number" placeholder="Amount" />
+                    <input name="date" type="date" required/>
+                    <input name="description" type="text" placeholder="Description" required />
+                    <input name="category" type="text" placeholder="Category" required />
+                    <input name="amount" type="number" placeholder="Amount" required />
                 </div>
                 <button type="submit">Add Transaction</button>
             </form>
