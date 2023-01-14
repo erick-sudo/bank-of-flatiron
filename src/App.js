@@ -25,6 +25,14 @@ function App() {
   function removeTransaction(id) {
     const newTransactions = transactions.filter(transaction => transaction.id!== id)
     setTransaction(newTransactions)
+
+    fetch(`http://localhost:4000/transactions/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
   }
 
   function addTransaction(transaction) {

@@ -4,6 +4,8 @@
     margin: 1em auto;
     padding: 0.5em;
     border-radius: 5px;
+
+    background-color: whitesmoke;
 }
 
 *{
@@ -113,22 +115,21 @@ table {
     /* border-collapse: collapse; */
 }
 th, td {
-    border: solid 1px;
     padding: 0.5em 0.5em 0.5em 1em;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(226, 114, 8) 2%, transparent);
+}
+th{
+    background: linear-gradient(45deg, rgb(34, 18, 3) 2%, transparent);
 }
 
 tr:hover{
-    background-color: burlywood;
-}
-
-.delete-button {
-    text-align: center;
-    border: solid 1px;
+    background-color: rgb(218, 150, 150);
 }
 
 .deletebutton {
-   padding: 0;
-   display: flex;
-   align-items: stretch;
-   justify-content: center;
+    text-align: center;
+    padding: 0.5em !important;
+    background: linear-gradient(45deg, rgb(134, 21, 1) 2%, transparent);
+
 }

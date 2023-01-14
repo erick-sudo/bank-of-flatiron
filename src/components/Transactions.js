@@ -1,5 +1,4 @@
 import React from "react";
-import DeleteTransactionButton from "./DeleteTransactionButton"
 
 function Transactions({transactions, removeTransaction}) {
     return (
@@ -10,8 +9,7 @@ function Transactions({transactions, removeTransaction}) {
                         <th>Date</th>
                         <th>Description</th>
                         <th>Category</th>
-                        <th>Amount</th>
-                        
+                        <th colSpan={2}>Amount</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,7 +21,9 @@ function Transactions({transactions, removeTransaction}) {
                                     <td>{transaction.description}</td>
                                     <td>{transaction.category}</td>
                                     <td>{transaction.amount}</td>
-                                    <td className="deletebutton"><DeleteTransactionButton transactionid={transaction.id} removeTransaction={removeTransaction} /></td>
+                                    <td className="deletebutton" onClick={() => {
+                                        removeTransaction(transaction.id)
+                                    }}>X</td>
                                 </tr>
                             )
                         }

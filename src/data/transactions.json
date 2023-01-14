@@ -1,20 +1,6 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "date": "2019-12-01",
-      "description": "Paycheck from Bob's Burgers",
-      "category": "Income",
-      "amount": 1000
-    },
-    {
-      "id": 2,
-      "date": "2019-12-01",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "amount": -10.55
-    },
-    {
       "id": 3,
       "date": "2019-12-02",
       "description": "South by Southwest Quinoa Bowl at Fresh & Co",
@@ -48,13 +34,6 @@
       "description": "Birthday Check from Grandma",
       "category": "Gift",
       "amount": 50
-    },
-    {
-      "id": 8,
-      "date": "2019-12-09",
-      "description": "Lyft Ride",
-      "category": "Transportation",
-      "amount": -13.25
     },
     {
       "id": 9,
@@ -97,20 +76,6 @@
       "category": "Food",
       "amount": "3000",
       "id": 14
-    },
-    {
-      "date": "2023-01-28",
-      "description": "Movie",
-      "category": "Entertainment",
-      "amount": "5",
-      "id": 15
-    },
-    {
-      "date": "2023-01-26",
-      "description": "Movie",
-      "category": "Entertainment",
-      "amount": "90",
-      "id": 16
     }
   ]
 }
