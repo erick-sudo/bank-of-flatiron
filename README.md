@@ -1,18 +1,10 @@
-# Name of the Project
+# Bank of Flat Iron Project
 *****
-### Author : Name Date
+### Author : Erick 15th Jan 2023
 ****
 ## Project Description
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-******
-
-## SCREENSHOTS
-- link 1
-- link 2
-
-
+A transactions management project that provides transactions management for the ```Bank of Flat Iron```
+For the available transactions one can use the Search endpoint to view transactions that contain a specific pattern of characters in their description fields.
 ********
 ## SetUp Instruction
 ### Requirements
@@ -51,10 +43,9 @@ Or you can access the web application directly via this [LINK.](link.com/)
 *****
 ## Technologies Used
 1. HTML
-2. MdBootstrap
-3. HTML
-4. CSS
-5. JavaScript
+2. REACT
+5. CSS
+6. JavaScript
 *****
 ## Contact Information
 * Email : example@gmail.com
