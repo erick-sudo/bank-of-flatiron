@@ -65,7 +65,7 @@ function App() {
     <div className="App">
       <div className="header">
         <h1 className="heading">Bank of Flatiron</h1>
-        <p className="welcome">Welcome to the Bank of Flatiron, where you can trust us with all your financial data! Use the below gif as an example of how the app should function.</p>
+        <p className="welcome">Welcome to the Bank of Flatiron, where you can trust us with all your financial data!</p>
         <button type="button" className="big-button">The Royal Bank of Flatiron</button>
       </div>
 
