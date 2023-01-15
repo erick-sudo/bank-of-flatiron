@@ -68,10 +68,10 @@ function App() {
   })
 
   const sortedTransactions = sort ? [...filteredTransactions].sort((t1, t2) => {
-    if(t1[sortBy] > t2[sortBy]) {
+    if(t1[sortBy].toLowerCase() > t2[sortBy].toLowerCase()) {
       return sortDirection === "asc" ? 1 : -1
     }
-    if(t1[sortBy] < t2[sortBy]) {
+    if(t1[sortBy].toLowerCase() < t2[sortBy].toLowerCase()) {
       return sortDirection === "asc" ? -1 : 1
     }
 

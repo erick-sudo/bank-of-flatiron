@@ -76,6 +76,13 @@
       "category": "Food",
       "amount": "3000",
       "id": 14
+    },
+    {
+      "date": "2023-01-28",
+      "description": "Uber Ride",
+      "category": "Hike",
+      "amount": "6789",
+      "id": 15
     }
   ]
 }
