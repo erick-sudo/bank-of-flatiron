@@ -18,13 +18,17 @@ Each transaction includes a Delete button which deletes the transaction both fro
 
 ## Sorting Transaction
 To sort transactions, you have to enable sorting.
-After enabling sorting, you are free to choose which data to use to sort transactions, either using **category** or **description** fields.
+After enabling sorting, you are free to choose which data to use to sort transactions, either using ```**category**``` or ```**description**``` fields.
+
+There are two ways to sort transactions:
+- Ascending
+- Descending
 ********
 
 ## The Search Bar
-Typing 
+Typing any string in the search bar will automatically filter transactions according to the search string and finally sort the transactions in alphabetical order either by ascending or descending.
 ## Live Link
-Or you can access the web application directly via this [LINK.](https://bank-of-flatiron-two.vercel.app/)
+You can access the web application directly via this [LINK.](https://bank-of-flatiron-two.vercel.app/)
 ## Technologies Used
 1. HTML
 2. REACT
