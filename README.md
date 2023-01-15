@@ -1,7 +1,7 @@
-# Bank of Flat Iron Project
+# Bank of Flat Iron
 *****
 ### Author : Erick 15th Jan 2023
-****
+*****
 ## Project Description
 A transactions management project that provides transactions management for the ```Bank of Flat Iron```
 For the available transactions one can use the Search endpoint to view transactions that contain a specific pattern of characters in their description fields.
@@ -9,8 +9,17 @@ For the available transactions one can use the Search endpoint to view transacti
 
 ## Adding Transaction
 The form captures all the data associated with the transaction.
-When submitted the data is persisted to the server besides being updated to the server, i.e. json-server
-*****
+When submitted the data is persisted to the server besides being updated to the server, i.e. **json-server**
+********
+
+## Deleting Transaction
+Each transaction includes a Delete button which deletes the transaction both from the database and updates the Components with a new list of transactions excluding the deleted transaction.
+********
+
+## Sorting Transaction
+To sort transactions, you have to enable sorting.
+After enabling sorting, you are free to choose which data to use to sort transactions, either using **category** or **description** fields.
+********
 
 ## The Search Bar
 Typing 
