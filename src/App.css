@@ -131,5 +131,23 @@ tr:hover{
     text-align: center;
     padding: 0.5em !important;
     background: linear-gradient(45deg, rgb(134, 21, 1) 2%, transparent);
+}
 
+.sortby {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sortby select {
+    flex-grow: 2;
+    border: solid 1px;
+    background-color: rgba(226, 113, 8, 0.438);
+    padding: 3px;
+    border-radius: 3px;
+}
+.sortby label{
+    font-weight: bolder;
+    padding: 5px ;
 }

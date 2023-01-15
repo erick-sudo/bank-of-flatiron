@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./App.css"
-import Search from "./components/Search";
+import { Search, Sortby} from "./components/Search";
 import TransactionForm from "./components/TransactionForm";
 import Transactions from "./components/Transactions";
 
@@ -71,6 +71,7 @@ function App() {
 
       <Search handleInput={handleInput} searchString={searchString}  />
       <TransactionForm addTransaction={addTransaction} />
+      <Sortby />
       <Transactions transactions={filteredTransactions} removeTransaction={removeTransaction} />
     </div>
   );

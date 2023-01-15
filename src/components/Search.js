@@ -10,4 +10,16 @@ function Search({searchString, handleInput}) {
     )
 }
 
-export default Search
+function Sortby() {
+    return (
+        <div className="sortby">
+            <label>Filter By</label>
+            <select className="sort">
+                <option value="category">Category</option>
+                <option value="description">Description</option>
+            </select>
+        </div>
+    )
+}
+
+export {Search, Sortby}
