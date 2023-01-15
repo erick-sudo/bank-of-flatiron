@@ -7,6 +7,12 @@
 
     background-color: whitesmoke;
 }
+.welcome{
+    text-align: center;
+    width: 95%;
+    margin: 1em auto;
+    padding: 0.5em;
+}
 
 *{
     box-sizing: border-box;
@@ -128,6 +134,7 @@ tr:hover{
 }
 
 .deletebutton {
+    cursor: pointer;
     text-align: center;
     padding: 0.5em !important;
     background: linear-gradient(45deg, rgb(134, 21, 1) 2%, transparent);

@@ -13,7 +13,7 @@ function Search({searchString, handleInput}) {
 function Sortby() {
     return (
         <div className="sortby">
-            <label>Filter By</label>
+            <label>Sort By</label>
             <select className="sort">
                 <option value="category">Category</option>
                 <option value="description">Description</option>
