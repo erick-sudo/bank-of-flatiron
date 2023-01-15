@@ -141,7 +141,7 @@ tr:hover{
 }
 
 .sortby {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -157,4 +157,13 @@ tr:hover{
 .sortby label{
     font-weight: bolder;
     padding: 5px ;
+}
+
+.sortstate {
+    margin-left: 3em;
+    display: flex;
+    align-items: center;
+}
+.sortstate > input {
+    transform: scale(1.3);
 }

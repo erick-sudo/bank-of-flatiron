@@ -9,6 +9,9 @@ import Transactions from "./components/Transactions";
 function App() {
   const [searchString, setSearchString] = useState("")
   const [transactions, setTransaction] = useState([]);
+  const [sortBy, setSortBy] = useState("description")
+  const [sort, setSort] = useState(false)
+  const [sortDirection, setSortDirection] = useState("desc")
 
   function handleInput(event) {
     setSearchString(event.target.value)
@@ -34,6 +37,9 @@ function App() {
       }
     })
   }
+
+  // const BIN_ID = "63c3f53215ab31599e3718da"
+  // const API_KEY = "$2b$10$4u8zZ2lw4ypsd60nOFmdrOTiiAvY93Tuw2SGMpkEl4BT2qNbwbjzu"
 
   function addTransaction(transaction) {
     fetch("http://localhost:4000/transactions", {
@@ -61,6 +67,17 @@ function App() {
     return transaction.description.toLowerCase().includes(searchString.toLowerCase())
   })
 
+  const sortedTransactions = sort ? [...filteredTransactions].sort((t1, t2) => {
+    if(t1[sortBy] > t2[sortBy]) {
+      return sortDirection === "asc" ? 1 : -1
+    }
+    if(t1[sortBy] < t2[sortBy]) {
+      return sortDirection === "asc" ? -1 : 1
+    }
+
+    return 0
+  }) : filteredTransactions
+
   return (
     <div className="App">
       <div className="header">
@@ -71,8 +88,8 @@ function App() {
 
       <Search handleInput={handleInput} searchString={searchString}  />
       <TransactionForm addTransaction={addTransaction} />
-      <Sortby />
-      <Transactions transactions={filteredTransactions} removeTransaction={removeTransaction} />
+      <Sortby sort={sort} setSort={setSort} sortBy={sortBy} setSortBy={setSortBy} sortDirection={sortDirection} setSortDirection={setSortDirection} />
+      <Transactions transactions={sortedTransactions} removeTransaction={removeTransaction} />
     </div>
   );
 }

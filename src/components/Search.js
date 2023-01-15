@@ -10,14 +10,31 @@ function Search({searchString, handleInput}) {
     )
 }
 
-function Sortby() {
+function Sortby({sort, setSort, sortBy, setSortBy, sortDirection, setSortDirection}) {
     return (
         <div className="sortby">
             <label>Sort By</label>
-            <select className="sort">
+            <select value={sortBy} disabled={!sort} className="sort" onChange={(event) => {
+                setSortBy(event.target.value)
+            }}>
                 <option value="category">Category</option>
                 <option value="description">Description</option>
             </select>
+            <div className="sortstate">
+                <input type="checkbox" onChange={(event) => {
+                    setSort(event.target.checked)
+                }}/>
+                <label>Sort</label>
+            </div>
+            <div className="sortdirection">
+                <label>Sort Direction</label>
+                <select value={sortDirection} disabled={!sort} className="sortdirection" onChange={(event) => {
+                setSortDirection(event.target.value)
+            }}>
+                <option value="asc">ASC</option>
+                <option value="desc">DESC</option>
+            </select>
+            </div>
         </div>
     )
 }
