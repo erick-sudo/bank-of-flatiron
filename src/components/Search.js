@@ -13,20 +13,22 @@ function Search({searchString, handleInput}) {
 function Sortby({sort, setSort, sortBy, setSortBy, sortDirection, setSortDirection}) {
     return (
         <div className="sortby">
-            <label>Sort By</label>
-            <select value={sortBy} disabled={!sort} className="sort" onChange={(event) => {
-                setSortBy(event.target.value)
-            }}>
-                <option value="category">Category</option>
-                <option value="description">Description</option>
-            </select>
-            <div className="sortstate">
+            <div className="sort-by">
+                <label>Sort By</label>
+                <select value={sortBy} disabled={!sort} className="sort" onChange={(event) => {
+                    setSortBy(event.target.value)
+                }}>
+                    <option value="category">Category</option>
+                    <option value="description">Description</option>
+                </select>
+            </div>
+            <div className="sort-state">
+            <label>Sort</label>
                 <input type="checkbox" onChange={(event) => {
                     setSort(event.target.checked)
                 }}/>
-                <label>Sort</label>
             </div>
-            <div className="sortdirection">
+            <div className="sort-direction">
                 <label>Sort Direction</label>
                 <select value={sortDirection} disabled={!sort} className="sortdirection" onChange={(event) => {
                 setSortDirection(event.target.value)

@@ -141,29 +141,32 @@ tr:hover{
 }
 
 .sortby {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.sortby > div {
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-.sortby select {
-    flex-grow: 2;
-    border: solid 1px;
-    background-color: rgba(226, 113, 8, 0.438);
-    padding: 3px;
-    border-radius: 3px;
-}
-.sortby label{
-    font-weight: bolder;
-    padding: 5px ;
+    background: linear-gradient(180deg, rgba(226, 113, 8, 0.521) 2%, transparent);
 }
 
-.sortstate {
-    margin-left: 3em;
-    display: flex;
-    align-items: center;
+.sortby > div > * {
+    margin: 5px;
 }
-.sortstate > input {
-    transform: scale(1.3);
+
+.sortby select {
+    background-color: rgb(226, 114, 8);
+    width: 90%;
+    border: solid 1px;
+    border-radius: 2px;;
+    padding: 3px;
+}
+.sortby > div label {
+    font-weight: bolder;
 }
