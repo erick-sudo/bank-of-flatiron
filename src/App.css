@@ -118,11 +118,26 @@ form > button {
 .table {
     width: 90%;
     margin: 2em auto;
+
+    border: solid 1px;
+    border-radius: 5px;
+    overflow-x: scroll;
+
+    background: linear-gradient(180deg, transparent 90%, rgb(34, 18, 3));
+}
+.table::-webkit-scrollbar {
+    background-color: transparent;
+    height: 5px;
+}
+.table::-webkit-scrollbar-thumb{
+    background-color: rgb(226, 114, 8);
+    border-radius: 5px;
 }
 
 table {
     width: 100%;
     /* border-collapse: collapse; */
+    padding-bottom: 2em;
 }
 th, td {
     padding: 0.5em 0.5em 0.5em 1em;

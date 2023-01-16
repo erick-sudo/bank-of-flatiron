@@ -38,9 +38,6 @@ function App() {
     })
   }
 
-  // const BIN_ID = "63c3f53215ab31599e3718da"
-  // const API_KEY = "$2b$10$4u8zZ2lw4ypsd60nOFmdrOTiiAvY93Tuw2SGMpkEl4BT2qNbwbjzu"
-
   function addTransaction(transaction) {
     fetch("https://transactions-bank-of-flatiron.herokuapp.com/transactions", {
       method: "POST",
