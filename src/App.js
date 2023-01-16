@@ -29,7 +29,7 @@ function App() {
     const newTransactions = transactions.filter(transaction => transaction.id!== id)
     setTransaction(newTransactions)
 
-    fetch(`http://localhost:4000/transactions/${id}`, {
+    fetch(`https://transactions-bank-of-flatiron.herokuapp.com/transactions/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function App() {
   // const API_KEY = "$2b$10$4u8zZ2lw4ypsd60nOFmdrOTiiAvY93Tuw2SGMpkEl4BT2qNbwbjzu"
 
   function addTransaction(transaction) {
-    fetch("http://localhost:4000/transactions", {
+    fetch("https://transactions-bank-of-flatiron.herokuapp.com/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetchTransactions("http://localhost:4000/transactions")
+    fetchTransactions("https://transactions-bank-of-flatiron.herokuapp.com/transactions")
   }, [])
 
   const filteredTransactions = transactions.filter(transaction => {
