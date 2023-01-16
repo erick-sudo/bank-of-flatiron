@@ -5,8 +5,9 @@
     padding: 0.5em;
     border-radius: 5px;
 
-    background: url("https://cdn.pixabay.com/photo/2016/11/21/17/55/abstract-1846836_960_720.jpg") center left repeat-y;
-    background-size: cover;
+    background: url("./gallery/fall-163496-removebg-preview.png") top left no-repeat,
+                linear-gradient(180deg, rgba(226, 113, 8, 0.424) 2%, transparent);
+    background-size: 400px;
 }
 .welcome{
     text-align: center;
@@ -63,6 +64,8 @@
     border: none;
     outline: none;
     border-radius: 5px;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 .search-bar img {
     width: 25px;
@@ -124,7 +127,7 @@ table {
 th, td {
     padding: 0.5em 0.5em 0.5em 1em;
     border-radius: 5px;
-    background: linear-gradient(45deg, rgb(226, 114, 8) 2%, transparent);
+    background: linear-gradient(45deg, rgb(226, 114, 8) 25%, transparent);
 }
 th{
     background: linear-gradient(45deg, rgb(34, 18, 3) 2%, transparent);
@@ -154,7 +157,7 @@ tr:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, rgba(226, 113, 8, 0.521) 2%, transparent);
+    background: linear-gradient(180deg, rgba(226, 113, 8, 0.521) 20%, transparent);
 }
 
 .sortby > div > * {
