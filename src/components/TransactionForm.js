@@ -11,6 +11,8 @@ function TransactionForm({addTransaction}) {
             amount: event.target.amount.value
         }
         addTransaction(transactionObject)
+
+        event.target.reset()
     }
 
     return (
